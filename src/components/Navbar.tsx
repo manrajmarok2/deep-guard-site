@@ -1,6 +1,7 @@
-import { Shield, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
 import { useState } from "react";
+import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -15,9 +16,9 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 backdrop-blur-lg bg-background/80">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <Shield className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold text-foreground">SecureGuard</span>
+          <div className="flex items-center space-x-3">
+            <img src={logo} alt="EternaWatch Security" className="h-12 w-12" />
+            <span className="text-xl font-bold text-foreground">EternaWatch</span>
           </div>
           
           {/* Desktop Menu */}
