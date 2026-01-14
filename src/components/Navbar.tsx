@@ -20,9 +20,9 @@ const Navbar = () => {
   const navLinks = [
     { label: "Home", to: "/", sectionId: "home" },
     { label: "Services", to: "/services", sectionId: "services" },
-    { label: "Training", to: "/#training", sectionId: "training" },
     { label: "About", to: "/about", sectionId: "about" },
     { label: "Careers", to: "/careers", sectionId: "careers" },
+    { label: "Contact", to: "/contact", sectionId: "contact" },
   ];
 
   return (
@@ -46,9 +46,9 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
-            <Link to="/#contact">
+            <Link to="/contact">
               <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                Contact
+                Get Quote
               </Button>
             </Link>
           </div>
@@ -75,9 +75,9 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
-            <Link to="/#contact" onClick={() => setMobileMenuOpen(false)}>
+            <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
               <Button className="bg-primary hover:bg-primary/90 text-primary-foreground w-full">
-                Contact
+                Get Quote
               </Button>
             </Link>
           </div>
